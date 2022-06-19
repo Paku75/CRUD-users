@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+
+<%= link_to "New user", new_user_path, class: "btn btn-primary btn-sm"%>
+
+<br><br><br>
+
+<table class="table">
+  <thead>
+    <tr> 
+      <th>Email</th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
+

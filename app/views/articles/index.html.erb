@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+
+<%= link_to "New article", new_article_path, class: "btn btn-primary btn-sm"%>
+
+<br><br><br>
+
+<table class="table">
+  <thead>
+    <tr> 
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td> <%= link_to article.title, article %> </td>
+        <td><%= article.description %></td>
+        <td><%= article.small_image %></td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
