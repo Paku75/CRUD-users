@@ -5,20 +5,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 3.1.2p20
 
-* System dependencies
+* gem "sqlite3", "~> 1.4"
 
-* Configuration
+* gem 'devise', '~> 4.8', '>= 4.8.1'
 
-* Database creation
+* rails s
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
